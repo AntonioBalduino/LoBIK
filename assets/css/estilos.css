@@ -181,3 +181,67 @@ header .links a.link-2:hover{
 }
 
 
+/*SEGUNDA SECTION - SERVIÇOS*/
+#sec-2{
+    background: linear-gradient(105deg,
+    #D8232A 0%,
+    #7A0F14 15%,
+    #111111 35%,
+    #111111 65%,
+    #7A0F14 85%,
+    #d82329 100%);
+    color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+#sec-2 h2{
+    font-weight: bold;
+}
+
+#sec-2 .cards{
+    display: flex;
+    padding: 20px;
+}
+
+#sec-2 div.cards div.card{
+    border: 1px solid #7A0F14;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+#sec-2 div.cards div.card i{
+    color: #d82329;
+    font-size: 45px;
+}
+
+#sec-2 div.cards div.card p{
+    text-align: center;
+    font-size: 15px;
+    color: #ffffffbd;
+}
+
+
+/*TERCEIRA SECTION - COM FUNCIONA*/
+#sec-3{
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+#sec-3 .content{
+    display: flex;
+    justify-content: space-between;
+}
+
