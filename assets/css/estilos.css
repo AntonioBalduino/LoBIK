@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+    color: #D8232A;
+    padding: 10px 40px;
+}
+
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+header .logo h2{
+    display: flex;
+    flex-direction: column;
+}
+header .logo h2 span{
+    font-size: 16px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+    
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #D8232A;
+    font-weight: bold;
+    position: relative;
+    
+}
+header nav ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+header nav ul li a:hover::after{
+    width: 100%;
+}
+
+header .links{
+    display: flex;
+    gap: 10px;
+}
+header .links a{
+    text-decoration: none;
+    border: 1px solid #D8232A;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #D8232A;
+    font-weight: bold;
+}
+header .links a.link-2{
+    background-color: #D8232A;
+    color: #ffffff;
+    border: none;
+}
