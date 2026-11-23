@@ -123,11 +123,19 @@ header .links a.link-2:hover {
     min-height: 800px;
     /*background: linear-gradient(to right, rgb(0,0,0,0.75), rgb(0,0,0,0.1)),
     url('../image/carro-Lobik.jpeg');*/
+<<<<<<< Updated upstream
     background-color: rgba(128, 128, 128, 0.623);
+=======
+    background-color: #ffffff;
+>>>>>>> Stashed changes
     background-image: url('../image/carro-Lobik.jpeg');
     background-repeat: no-repeat;
     background-position: right;
     background-size: 70% auto;
+<<<<<<< Updated upstream
+=======
+    background-color: #ffffff;
+>>>>>>> Stashed changes
     background-blend-mode: multiply;
     /*background-size: 40% auto;
     background-size: cover;
