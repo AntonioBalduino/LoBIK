@@ -182,13 +182,13 @@ header .links a.link-2:hover{
 
 
 /*SEGUNDA SECTION - SERVIÇOS*/
-#sec-2{
+#servicos{
     background: linear-gradient(105deg,
     #D8232A 0%,
-    #7A0F14 15%,
-    #111111 35%,
-    #111111 65%,
-    #7A0F14 85%,
+    #d82329 18%,
+    #111111 18%,
+    #111111 80%,
+    #d82329 80%,
     #d82329 100%);
     color: red;
     display: flex;
@@ -199,16 +199,16 @@ header .links a.link-2:hover{
 
 }
 
-#sec-2 h2{
+#servicos h2{
     font-weight: bold;
 }
 
-#sec-2 .cards{
+#servicos .cards{
     display: flex;
     padding: 20px;
 }
 
-#sec-2 div.cards div.card{
+#servicos div.cards div.card{
     border: 1px solid #7A0F14;
     margin: 10px;
     display: flex;
@@ -219,12 +219,12 @@ header .links a.link-2:hover{
     color: #ffffff;
 }
 
-#sec-2 div.cards div.card i{
+#servicos div.cards div.card i{
     color: #d82329;
     font-size: 45px;
 }
 
-#sec-2 div.cards div.card p{
+#servicos div.cards div.card p{
     text-align: center;
     font-size: 15px;
     color: #ffffffbd;
@@ -232,16 +232,168 @@ header .links a.link-2:hover{
 
 
 /*TERCEIRA SECTION - COM FUNCIONA*/
-#sec-3{
-    border: 2px solid;
+#como-funciona{
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 20px;
+    background-color: #111111;
+    color: #ffffff;
+    padding: 20px;
 }
 
-#sec-3 .content{
+#como-funciona .content{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#como-funciona div.content div.content-1, 
+div.content-2,
+div.content-3{
+    
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+   padding: 20px;
+    
+}
+
+
+#como-funciona .content div.number{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d82329;
+    color: #111111;
+    border-radius: 50%;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+
+/*ZONAS DE COBERTURAS*/
+
+#zonas{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    background: #201f21;
+    color: #ffffff;
+}
+
+#zonas h2{
+    color: #d82329;
+    font-size: 28pt;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#zonas div.content{
     display: flex;
     justify-content: space-between;
 }
 
+#zonas div.content div.zona-1,
+div.zona-2,
+div.zona-3,
+div.zona-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    line-height: 10px;
+}
+
+#zonas div.content div.icon i{
+    color: #d82329;
+    font-size: 50px;
+}
+
+#zonas div.content div.zona-1 h3,
+div.zona-2 h3,
+div.zona-3 h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#zonas div.content p{
+    color: #ffffffc5;
+}
+
+#zonas div.content div.zona-4{
+    background-color: rgba(255, 0, 0, 0.527);
+    border-radius: 10px;
+}
+
+
+
+/*FALE CONNOSCO*/
+#fale-connosco{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #111111;
+    color: #ffffff;
+    position: relative;
+}
+
+#fale-connosco div.fale h2{
+    color: #d82329;
+    font-weight: bold;
+}
+
+#fale-connosco div.fale p{
+    color: #ffffffc9;
+}
+
+#fale-connosco div.fale div.redes{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 300px;
+
+}
+
+#fale-connosco div.corridas{
+    margin-top: 45px;
+    position: relative;
+    padding: 20px;
+}
+
+#fale-connosco div.corridas p{
+    background-color: #d82329;
+    padding: 10px;
+    color: #111111;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#fale-connosco div.transporte{
+    position: absolute;
+    right: 120px;
+    top: 10px;
+    background-color: #d82329;
+    font-weight: bold;
+    color: #111111;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+/*FOOTER*/
+footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #201f21;
+    color: #ffffff;
+}
+
+footer p{
+    margin: 0;
+}
