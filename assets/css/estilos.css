@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*HEADER*/
 header{
     display: flex;
@@ -114,17 +118,59 @@ header .links a.link-2:hover{
     background-position: right;
     /*background-size: 40% auto;*/
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
     color: #ffffff;
     
 
 }
 
-#sec-1 h2{
+#sec-1 h2::after{
+    content: "L";
     color: #D8232A;
     font-size: 36pt;
     font-weight: bold;
+    animation: lobik 3s infinite alternate;
 }
+
+@keyframes lobik{
+    15.38%{
+        content: "Lo |";
+    }
+    23.07%{
+        content: "LoB |";
+    }
+    30.76%{
+        content: "LoBI |";
+    }
+    38.45%{
+        content: "LoBIK |";
+    }
+    46.14%{
+        content: "LoBIK | ";
+    }
+    53.83%{
+        content: "LoBIK E |";
+    }
+    61.52%{
+        content: "LoBIK EX |";
+    }
+    69.21%{
+        content: "LoBIK EXP |";
+    }
+    76.9%{
+        content: "LoBIK EXPR |";
+    }
+    84.59%{
+        content: "LoBIK EXPRE |";
+    }
+    92.28%{
+        content: "LoBIK EXPRES |";
+    }
+    100%{
+        content: "LoBIK EXPRESS|";
+    }
+}
+/*LoBIK EXPRESS*/
 
 #sec-1 h3{
     font-weight: bold;
@@ -355,8 +401,21 @@ div.zona-3 h3 {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    width: 300px;
+    width: 350px;
+    /*border: 2px solid white;*/
+    line-height: 40px;
+    cursor: pointer;
+}
 
+#fale-connosco div.fale div.redes a{
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+#fale-connosco div.fale div.redes a:hover{
+    color: #ffffff77;
+    transition: 0.5s;
+    
 }
 
 #fale-connosco div.corridas{
