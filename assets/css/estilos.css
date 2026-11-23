@@ -1,16 +1,16 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 /*HEADER*/
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,22 +19,24 @@ header{
     padding: 10px 20px;
 }
 
-header .logo{
+header .logo {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
-header .logo h2{
+
+header .logo h2 {
     display: flex;
     flex-direction: column;
     font-weight: bold;
 }
-header .logo h2 span{
+
+header .logo h2 span {
     font-size: 16px;
 }
 
-header .logo span i{
+header .logo span i {
     color: white;
     font-size: 28px;
 }
@@ -46,16 +48,18 @@ header nav ul {
     align-items: center;
     gap: 12px;
     list-style: none;
-    
+
 }
-header nav ul li a{
+
+header nav ul li a {
     text-decoration: none;
     color: #D8232A !important;
     font-weight: bold;
     position: relative;
-    
+
 }
-header nav ul li a::after{
+
+header nav ul li a::after {
     content: "";
     width: 0%;
     height: 2px;
@@ -65,15 +69,17 @@ header nav ul li a::after{
     left: 0;
     transition: 0.5s ease-in-out;
 }
-header nav ul li a:hover::after{
+
+header nav ul li a:hover::after {
     width: 100%;
 }
 
-header .links{
+header .links {
     display: flex;
     gap: 10px;
 }
-header .links a{
+
+header .links a {
     text-decoration: none;
     border: 1px solid #D8232A;
     padding: 5px 13px;
@@ -86,45 +92,58 @@ header .links a{
     gap: 8px;
 }
 
-header .links a.link-1:hover{
+header .links a.link-1:hover {
     background-color: #ffffff;
     transition: 0.5s;
 }
 
-header .links a i{
+header .links a i {
     font-size: 18px;
 }
 
-header .links a.link-2{
+header .links a.link-2 {
     background-color: #D8232A;
     color: #ffffff;
     border: none;
 }
-header .links a.link-2:hover{
+
+header .links a.link-2:hover {
     background-color: #d82329a2;
     transition: 0.5s;
 }
 
 
 /*HERO OU PRIMEIRA SECTION*/
-#sec-1{
+#sec-1 {
     width: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    background: linear-gradient(to right, rgb(0,0,0,0.75), rgb(0,0,0,0.1)),
-    url('../image/carro-Lobik.jpeg');
+    padding: 50px;
+    min-height: 800px;
+    /*background: linear-gradient(to right, rgb(0,0,0,0.75), rgb(0,0,0,0.1)),
+    url('../image/carro-Lobik.jpeg');*/
+    background-color: #ffffff;
+    background-image: url('../image/carro-Lobik.jpeg');
     background-repeat: no-repeat;
     background-position: right;
-    /*background-size: 40% auto;*/
+    background-size: 70% auto;
+    background-color: #ffffff;
+    background-blend-mode: multiply;
+    /*background-size: 40% auto;
     background-size: cover;
     height: 100vh;
     color: #ffffff;
-    
+    */
+
 
 }
 
-#sec-1 h2::after{
+#sec-1 div.content {
+    padding: 50px;
+}
+
+#sec-1 div.content h2::after {
     content: "L";
     color: #D8232A;
     font-size: 36pt;
@@ -132,63 +151,76 @@ header .links a.link-2:hover{
     animation: lobik 3s infinite alternate;
 }
 
-@keyframes lobik{
-    15.38%{
+@keyframes lobik {
+    15.38% {
         content: "Lo |";
     }
-    23.07%{
+
+    23.07% {
         content: "LoB |";
     }
-    30.76%{
+
+    30.76% {
         content: "LoBI |";
     }
-    38.45%{
+
+    38.45% {
         content: "LoBIK |";
     }
-    46.14%{
+
+    46.14% {
         content: "LoBIK | ";
     }
-    53.83%{
+
+    53.83% {
         content: "LoBIK E |";
     }
-    61.52%{
+
+    61.52% {
         content: "LoBIK EX |";
     }
-    69.21%{
+
+    69.21% {
         content: "LoBIK EXP |";
     }
-    76.9%{
+
+    76.9% {
         content: "LoBIK EXPR |";
     }
-    84.59%{
+
+    84.59% {
         content: "LoBIK EXPRE |";
     }
-    92.28%{
+
+    92.28% {
         content: "LoBIK EXPRES |";
     }
-    100%{
+
+    100% {
         content: "LoBIK EXPRESS|";
     }
 }
+
 /*LoBIK EXPRESS*/
 
-#sec-1 h3{
+#sec-1 div.content h3 {
     font-weight: bold;
     font-size: 19px;
 }
 
-#sec-1 p small{
+#sec-1 div.content p small {
     color: #ffffffd0;
 }
 
-#sec-1 div.links{
+#sec-1 div.content div.links {
     margin-top: 40px;
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
 }
-#sec-1 div.links a{
+
+#sec-1 div.content div.links a {
     border: 1px solid;
     text-decoration: none;
     color: #ffffff;
@@ -199,43 +231,47 @@ header .links a.link-2:hover{
     display: flex;
     gap: 8px;
 }
-#sec-1 div.links a.link-1{
+
+#sec-1 div.content div.links a.link-1 {
     border: none;
 }
-#sec-1 div.links a.link-2{
+
+#sec-1 div.content div.links a.link-2 {
     background-color: #111111a9;
     border: 1px solid #D8232A;
 }
-#sec-1 div.links a.link-1:hover{
+
+#sec-1 div.content div.links a.link-1:hover {
     background-color: #d82329;
     transition: 0.5s;
 }
-#sec-1 div.links a.link-2:hover{
+
+#sec-1 div.content div.links a.link-2:hover {
     background-color: #ffffff;
     color: #111111;
     transition: 0.5s;
 }
 
-#sec-1 p.preco{
+#sec-1 div.content p.preco {
     width: 310px;
     padding: 5px;
     color: #ffffff;
     font-weight: bold;
     font-size: 12px;
-    background-color: #6c616271;
+    background-color: #6c6162d5;
     border-radius: 8px;
 }
 
 
 /*SEGUNDA SECTION - SERVIÇOS*/
-#servicos{
+#servicos {
     background: linear-gradient(105deg,
-    #D8232A 0%,
-    #d82329 18%,
-    #111111 18%,
-    #111111 80%,
-    #d82329 80%,
-    #d82329 100%);
+            #D8232A 0%,
+            #d82329 18%,
+            #111111 18%,
+            #111111 80%,
+            #d82329 80%,
+            #d82329 100%);
     color: red;
     display: flex;
     flex-direction: column;
@@ -245,16 +281,16 @@ header .links a.link-2:hover{
 
 }
 
-#servicos h2{
+#servicos h2 {
     font-weight: bold;
 }
 
-#servicos .cards{
+#servicos .cards {
     display: flex;
     padding: 20px;
 }
 
-#servicos div.cards div.card{
+#servicos div.cards div.card {
     border: 1px solid #7A0F14;
     margin: 10px;
     display: flex;
@@ -265,12 +301,12 @@ header .links a.link-2:hover{
     color: #ffffff;
 }
 
-#servicos div.cards div.card i{
+#servicos div.cards div.card i {
     color: #d82329;
     font-size: 45px;
 }
 
-#servicos div.cards div.card p{
+#servicos div.cards div.card p {
     text-align: center;
     font-size: 15px;
     color: #ffffffbd;
@@ -278,7 +314,7 @@ header .links a.link-2:hover{
 
 
 /*TERCEIRA SECTION - COM FUNCIONA*/
-#como-funciona{
+#como-funciona {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -288,25 +324,25 @@ header .links a.link-2:hover{
     padding: 20px;
 }
 
-#como-funciona .content{
+#como-funciona .content {
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
 
-#como-funciona div.content div.content-1, 
+#como-funciona div.content div.content-1,
 div.content-2,
-div.content-3{
-    
+div.content-3 {
+
     display: flex;
     gap: 10px;
     justify-content: center;
-   padding: 20px;
-    
+    padding: 20px;
+
 }
 
 
-#como-funciona .content div.number{
+#como-funciona .content div.number {
     width: 50px;
     height: 50px;
     display: flex;
@@ -322,7 +358,7 @@ div.content-3{
 
 /*ZONAS DE COBERTURAS*/
 
-#zonas{
+#zonas {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -331,14 +367,14 @@ div.content-3{
     color: #ffffff;
 }
 
-#zonas h2{
+#zonas h2 {
     color: #d82329;
     font-size: 28pt;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-#zonas div.content{
+#zonas div.content {
     display: flex;
     justify-content: space-between;
 }
@@ -346,7 +382,7 @@ div.content-3{
 #zonas div.content div.zona-1,
 div.zona-2,
 div.zona-3,
-div.zona-4{
+div.zona-4 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -355,7 +391,7 @@ div.zona-4{
     line-height: 10px;
 }
 
-#zonas div.content div.icon i{
+#zonas div.content div.icon i {
     color: #d82329;
     font-size: 50px;
 }
@@ -367,11 +403,11 @@ div.zona-3 h3 {
     font-size: 20px;
 }
 
-#zonas div.content p{
+#zonas div.content p {
     color: #ffffffc5;
 }
 
-#zonas div.content div.zona-4{
+#zonas div.content div.zona-4 {
     background-color: rgba(255, 0, 0, 0.527);
     border-radius: 10px;
 }
@@ -379,7 +415,7 @@ div.zona-3 h3 {
 
 
 /*FALE CONNOSCO*/
-#fale-connosco{
+#fale-connosco {
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -388,16 +424,16 @@ div.zona-3 h3 {
     position: relative;
 }
 
-#fale-connosco div.fale h2{
+#fale-connosco div.fale h2 {
     color: #d82329;
     font-weight: bold;
 }
 
-#fale-connosco div.fale p{
+#fale-connosco div.fale p {
     color: #ffffffc9;
 }
 
-#fale-connosco div.fale div.redes{
+#fale-connosco div.fale div.redes {
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -407,24 +443,25 @@ div.zona-3 h3 {
     cursor: pointer;
 }
 
-#fale-connosco div.fale div.redes a{
+#fale-connosco div.fale div.redes a {
     color: white;
     text-decoration: none;
     white-space: nowrap;
 }
-#fale-connosco div.fale div.redes a:hover{
+
+#fale-connosco div.fale div.redes a:hover {
     color: #ffffff77;
     transition: 0.5s;
-    
+
 }
 
-#fale-connosco div.corridas{
+#fale-connosco div.corridas {
     margin-top: 45px;
     position: relative;
     padding: 20px;
 }
 
-#fale-connosco div.corridas p{
+#fale-connosco div.corridas p {
     background-color: #d82329;
     padding: 10px;
     color: #111111;
@@ -432,7 +469,7 @@ div.zona-3 h3 {
     border-radius: 10px;
 }
 
-#fale-connosco div.transporte{
+#fale-connosco div.transporte {
     position: absolute;
     right: 120px;
     top: 10px;
@@ -446,13 +483,13 @@ div.zona-3 h3 {
 
 
 /*FOOTER*/
-footer{
+footer {
     text-align: center;
     padding: 20px 0;
     background-color: #201f21;
     color: #ffffff;
 }
 
-footer p{
+footer p {
     margin: 0;
 }
