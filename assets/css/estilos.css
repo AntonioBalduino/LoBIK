@@ -295,7 +295,7 @@ header .links a.link-2:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 25px;
     background-color: #111111;
     color: #ffffff;
 }
