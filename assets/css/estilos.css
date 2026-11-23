@@ -17,6 +17,7 @@ header {
     background-color: #111111;
     color: #D8232A;
     padding: 10px 20px;
+    position: relative;
 }
 
 header .logo {
@@ -46,7 +47,7 @@ header nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 30px;
     list-style: none;
 
 }
@@ -113,7 +114,7 @@ header .links a.link-2:hover {
 }
 
 /*LISTA */
-header div.links a.list{
+header div.links button{
     display: none;
 }
 

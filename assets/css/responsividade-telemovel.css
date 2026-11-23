@@ -1,12 +1,40 @@
 @media(max-width: 767px){
     header nav{
-        display: none;
+        /*display: none;*/
+        position: absolute;
+        top: 77px;
+        left: 0;
+        background-color: #111111;
+        width: 100%;
+        z-index: 1;
+        padding: 20px;
     }
+    header nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+        /*padding: 20px;*/
+        
+    }
+    header nav ul li a{
+        white-space: nowrap;
+    }
+
+
 
     header div.links a{
         display: none;
     }
-    header div.links a.list{
+    header div.links button.btn{
         display: block;
+        background-color: #ffffff;
+        color: #D8232A;
+        border: none;
+        font-size: 22px;
+    }
+    header div.links button.btn:hover{
+        color: #ffffff;
+        background-color: #D8232A;
     }
 }
