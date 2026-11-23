@@ -112,6 +112,11 @@ header .links a.link-2:hover {
     transition: 0.5s;
 }
 
+/*LISTA */
+header div.links a.list{
+    display: none;
+}
+
 
 /*HERO OU PRIMEIRA SECTION*/
 #sec-1 {

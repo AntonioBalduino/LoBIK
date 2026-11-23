@@ -1,0 +1,12 @@
+@media(max-width: 767px){
+    header nav{
+        display: none;
+    }
+
+    header div.links a{
+        display: none;
+    }
+    header div.links a.list{
+        display: block;
+    }
+}
