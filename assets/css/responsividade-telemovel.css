@@ -67,6 +67,10 @@
         left: 0;
     }
 
+    #sec-1 div.content h2{
+        font-size: 1px;
+    }
+
     #sec-1 div.content p {
         display: none;
     }
