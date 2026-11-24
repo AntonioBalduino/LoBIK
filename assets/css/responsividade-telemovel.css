@@ -52,8 +52,8 @@
         flex-direction: column;
         padding: 10px;
         min-height: 100px;
-        background: linear-gradient(to right, rgb(0,0,0,0.75), rgb(0,0,0,0.1)),
-    url('../image/carro-Lobik.jpeg');
+        background: linear-gradient(to right, rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0.1)),
+            url('../image/carro-Lobik.jpeg');
         /*background-color: rgba(128, 128, 128, 0.623);
         background-image: url('../image/carro-Lobik.jpeg');*/
         background-repeat: no-repeat;
@@ -65,10 +65,65 @@
         position: absolute;
         top: 0;
         left: 0;
+
     }
 
-    #sec-1 div.content h2{
-        font-size: 1px;
+    #sec-1 div.content h2 {
+        content: "L";
+        color: #D8232A;
+        font-size: 1pt;
+        font-weight: bold;
+        animation: lobik 3s infinite alternate;
+    }
+
+    @keyframes lobik {
+        15.38% {
+            content: "Lo |";
+        }
+
+        23.07% {
+            content: "LoB |";
+        }
+
+        30.76% {
+            content: "LoBI |";
+        }
+
+        38.45% {
+            content: "LoBIK |";
+        }
+
+        46.14% {
+            content: "LoBIK | ";
+        }
+
+        53.83% {
+            content: "LoBIK E |";
+        }
+
+        61.52% {
+            content: "LoBIK EX |";
+        }
+
+        69.21% {
+            content: "LoBIK EXP |";
+        }
+
+        76.9% {
+            content: "LoBIK EXPR |";
+        }
+
+        84.59% {
+            content: "LoBIK EXPRE |";
+        }
+
+        92.28% {
+            content: "LoBIK EXPRES |";
+        }
+
+        100% {
+            content: "LoBIK EXPRESS|";
+        }
     }
 
     #sec-1 div.content p {
