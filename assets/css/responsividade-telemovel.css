@@ -2,7 +2,7 @@
     header nav {
         /*display: none;*/
         position: absolute;
-        top: 77px;
+        top: 75px !important;
         left: 0;
         background-color: #111111;
         width: 100%;
@@ -46,87 +46,103 @@
 
     /*SECTION 1 #sec-1*/
     #sec-1 {
-        width: 100%;
         position: relative;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        min-height: 100px;
-        background: linear-gradient(to right, rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0.1)),
-            url('../image/carro-Lobik.jpeg');
-        /*background-color: rgba(128, 128, 128, 0.623);
-        background-image: url('../image/carro-Lobik.jpeg');*/
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: 100% auto;
+        width: 100% !important;
+        min-height: 50vh !important;
+        background-repeat: no-repeat !important;
+        background-position: bottom !important;
+        background-size: 80% auto !important;
+        background-blend-mode: multiply !important;
     }
 
     #sec-1 div.content {
-        position: absolute;
-        top: 0;
-        left: 0;
-
+        width: 100% !important;
+        position: absolute !important;
+        right: 0 !important;
+        top: 0 !important;
+        padding: 30px 20px !important;
     }
 
-    #sec-1 div.content h2 {
+    #sec-1 div.content h2::after {
         content: "L";
-        color: #D8232A;
-        font-size: 1pt;
-        font-weight: bold;
-        animation: lobik 3s infinite alternate;
+        color: #111111;
+        font-size: 20pt !important;
+        /*font-weight: bold;
+        animation: lobik 3s infinite alternate;*/
     }
 
-    @keyframes lobik {
-        15.38% {
-            content: "Lo |";
+    #sec-1 div.content h3 {
+        color: #ffffffd8;
+        font-size: 18px !important;
+        margin-top: 20px !important;
+        line-height: 30px;
+        text-align: justify !important;
+    }
+
+    #sec-1 div.content div.links {
+        display: none !important;
+    }
+
+    #sec-1 div.zap {
+        position: fixed;
+        background-color: #111111;
+        border: 1px solid #D8232A;
+        color: white;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        animation: back 1s infinite alternate;
+        z-index: 1;
+    }
+
+    #sec-1 div.zap i {
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    @keyframes back {
+        for {
+            background-color: #111111;
         }
 
-        23.07% {
-            content: "LoB |";
-        }
-
-        30.76% {
-            content: "LoBI |";
-        }
-
-        38.45% {
-            content: "LoBIK |";
-        }
-
-        46.14% {
-            content: "LoBIK | ";
-        }
-
-        53.83% {
-            content: "LoBIK E |";
-        }
-
-        61.52% {
-            content: "LoBIK EX |";
-        }
-
-        69.21% {
-            content: "LoBIK EXP |";
-        }
-
-        76.9% {
-            content: "LoBIK EXPR |";
-        }
-
-        84.59% {
-            content: "LoBIK EXPRE |";
-        }
-
-        92.28% {
-            content: "LoBIK EXPRES |";
-        }
-
-        100% {
-            content: "LoBIK EXPRESS|";
+        to {
+            background-color: #D8232A;
         }
     }
 
     #sec-1 div.content p {
         display: none;
     }
+
+
+    /*SECTION DE SERVIÇOS*/
+    #servicos{
+        width: 100% !important;
+        padding: 10px !important;
+    }
+    #servicos div.cards{
+        display: flex !important;
+        flex-direction: column;
+    }
+
+
+    /*SECTION COMO-FUNCIONA*/
+    #como-funciona div.content{
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 10px !important;
+        text-align: justify !important;
+    }
+
+    #como-funciona div.content p{
+        color: #ffffffcc;
+    }
+
 }
