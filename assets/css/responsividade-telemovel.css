@@ -1,5 +1,5 @@
-@media(max-width: 767px){
-    header nav{
+@media(max-width: 767px) {
+    header nav {
         /*display: none;*/
         position: absolute;
         top: 77px;
@@ -9,32 +9,65 @@
         z-index: 1;
         padding: 20px;
     }
-    header nav ul{
+
+    header nav ul {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        
+
         /*padding: 20px;*/
-        
+
     }
-    header nav ul li a{
+
+    header nav ul li a {
         white-space: nowrap;
     }
 
 
 
-    header div.links a{
+    header div.links a {
         display: none;
     }
-    header div.links button.btn{
+
+    header div.links button.btn {
         display: block;
         background-color: #ffffff;
         color: #D8232A;
         border: none;
         font-size: 22px;
     }
-    header div.links button.btn:hover{
+
+    header div.links button.btn:hover {
         color: #ffffff;
         background-color: #D8232A;
+    }
+
+
+
+    /*SECTION 1 #sec-1*/
+    #sec-1 {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        min-height: 100px;
+        background: linear-gradient(to right, rgb(0,0,0,0.75), rgb(0,0,0,0.1)),
+    url('../image/carro-Lobik.jpeg');
+        /*background-color: rgba(128, 128, 128, 0.623);
+        background-image: url('../image/carro-Lobik.jpeg');*/
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 100% auto;
+    }
+
+    #sec-1 div.content {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #sec-1 div.content p {
+        display: none;
     }
 }
