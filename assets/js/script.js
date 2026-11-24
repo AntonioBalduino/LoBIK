@@ -1,6 +1,8 @@
 const nav = document.getElementById('nav');
 /*display: none;*/
+
 nav.style.display = "none";
+
 function dropdown() {
     if (nav.style.display == "none") {
         nav.style.display = "block";
