@@ -129,11 +129,12 @@ header div.links button{
     min-height: 800px;
     /*background: linear-gradient(to right, rgb(0,0,0,0.75), rgb(0,0,0,0.1)),
     url('../image/carro-Lobik.jpeg');*/
-    background-color: rgba(128, 128, 128, 0.623);
-    background-image: url('../image/carro-Lobik.jpeg');
+
+    background-color:  rgba(128, 128, 128, 0.199);
+    background-image: url('../image/car.jpeg');
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: 70% auto;
+    background-position: center;
+    background-size: 100% auto;
     background-blend-mode: multiply;
     /*background-size: 40% auto;
     background-size: cover;
@@ -141,16 +142,17 @@ header div.links button{
     color: #ffffff;
     */
 
-
 }
 
 #sec-1 div.content {
+    position: absolute;
     padding: 50px;
+    color: #ffffff;
 }
 
 #sec-1 div.content h2::after {
     content: "L";
-    color: #D8232A;
+    color: #d82329;
     font-size: 36pt;
     font-weight: bold;
     animation: lobik 3s infinite alternate;
@@ -214,7 +216,9 @@ header div.links button{
 }
 
 #sec-1 div.content p small {
-    color: #ffffffd0;
+    display: none;
+    color: #d82329;
+    font-weight: bold;
 }
 
 #sec-1 div.content div.links {
@@ -265,6 +269,10 @@ header div.links button{
     font-size: 12px;
     background-color: #6c6162d5;
     border-radius: 8px;
+}
+
+#sec-1 div.zap{
+    display: none;
 }
 
 
