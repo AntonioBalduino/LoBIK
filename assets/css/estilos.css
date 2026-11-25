@@ -126,11 +126,11 @@ header div.links button{
     display: flex;
     flex-direction: column;
     padding: 50px;
-    min-height: 800px;
+    min-height: 610px;
     /*background: linear-gradient(to right, rgb(0,0,0,0.75), rgb(0,0,0,0.1)),
     url('../image/carro-Lobik.jpeg');*/
 
-    background-color:  rgba(128, 128, 128, 0.199);
+    background-color:  rgb(128, 128, 128);
     background-image: url('../image/car.jpeg');
     background-repeat: no-repeat;
     background-position: center;

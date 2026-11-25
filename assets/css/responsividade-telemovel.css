@@ -24,7 +24,6 @@
     }
 
 
-
     header div.links a {
         display: none;
     }
@@ -48,10 +47,10 @@
     #sec-1 {
         position: relative;
         width: 100% !important;
-        min-height: 50vh !important;
+        min-height: 46vh !important;
         background-repeat: no-repeat !important;
-        background-position: bottom !important;
-        background-size: 80% auto !important;
+        background-position: center !important;
+        background-size: 100% auto !important;
         background-blend-mode: multiply !important;
     }
 
