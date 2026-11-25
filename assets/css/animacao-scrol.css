@@ -1,7 +1,7 @@
 /*ANIMACAO PARA SERVICOS*/
 
 #servicos div.cards div.card {
-    animation: scroll linear;
+    animation: zonas linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -18,7 +18,7 @@
     }
 }
 
-/*ANIMACAO PARA COMO FUNCIONA*/
+/*ANIMACAO PARA COMO FUNCIONA
 #como-funciona div.content div.item {
     animation: zonas linear;
     animation-timeline: view();
@@ -37,9 +37,11 @@
     }
 }
 
+*/
+
 /*ANIMACAO PARA ZONAS DE COBERTURA*/
 #zonas div.content div.zona{
-    animation: como-funciona linear;
+    animation: zonas linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
