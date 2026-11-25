@@ -130,7 +130,7 @@ header div.links button{
     /*background: linear-gradient(to right, rgb(0,0,0,0.75), rgb(0,0,0,0.1)),
     url('../image/carro-Lobik.jpeg');*/
 
-    background-color:  rgb(128, 128, 128);
+    background-color:  rgba(128, 128, 128, 0.61);
     background-image: url('../image/car.jpeg');
     background-repeat: no-repeat;
     background-position: center;
@@ -152,7 +152,7 @@ header div.links button{
 
 #sec-1 div.content h2::after {
     content: "L";
-    color: #d82329;
+    color: #ffffff;
     font-size: 36pt;
     font-weight: bold;
     animation: lobik 3s infinite alternate;

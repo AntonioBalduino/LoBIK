@@ -47,7 +47,7 @@
     #sec-1 {
         position: relative;
         width: 100% !important;
-        min-height: 46vh !important;
+        min-height: 50vh !important;
         background-repeat: no-repeat !important;
         background-position: center !important;
         background-size: 100% auto !important;
@@ -58,20 +58,20 @@
         width: 100% !important;
         position: absolute !important;
         right: 0 !important;
-        top: 0 !important;
-        padding: 30px 20px !important;
+        top: 10px !important;
+        padding: 10px 20px !important;
     }
 
     #sec-1 div.content h2::after {
         content: "L";
-        color: #111111;
+        color: #d80303 !important;
         font-size: 20pt !important;
         /*font-weight: bold;
         animation: lobik 3s infinite alternate;*/
     }
 
     #sec-1 div.content h3 {
-        color: #ffffffd8;
+        color: #ffffff;
         font-size: 18px !important;
         margin-top: 20px !important;
         line-height: 30px;
@@ -84,12 +84,13 @@
 
     #sec-1 div.zap {
         position: fixed;
+        display: block !important;
         background-color: #111111;
         border: 1px solid #D8232A;
         color: white;
         width: 60px;
         height: 60px;
-        display: flex;
+        display: flex !important;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
